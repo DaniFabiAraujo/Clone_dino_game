@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.dino {
+    width: 90px;
+    height: 60px;
+    background: transparent;
+    background-size: cover;
+    position: absolute;
+    bottom: 32;
+    background-image: url('../images/dino.png');
+}
+
+.cactus {
+    width: 90px;
+    height: 60px;
+    background-image: url('../images/cactus2.png');
+    position: absolute;
+    background-size: cover;
+    bottom: 32;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 700s infinite linear;
+    width: 100%;
+    height: 550px;
+    background-image: url("../images/background..png");
+}
+
+.score {
+    text-align: center;
+    color: #666;
+    margin: 50px 0;
+    font-family: 'LVDC Game Over 2', sans-serif;
+}
+
+.game-over {
+    font-family: 'LVDC Game Over 2', sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    color: #00ff00;
+}
